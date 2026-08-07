@@ -41,3 +41,43 @@
 .animate-fade-in {
   animation: fadeInUp 0.4s ease-out;
 }
+
+/* Rich text editor */
+.rich-text-editor:empty::before {
+  content: attr(data-placeholder);
+  color: #94a3b8;
+  pointer-events: none;
+}
+.rich-text-editor h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 1rem 0 0.5rem;
+}
+.rich-text-editor h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0.75rem 0 0.5rem;
+}
+.rich-text-editor p {
+  margin-bottom: 0.75rem;
+}
+.rich-text-editor blockquote {
+  border-left: 3px solid #f59e0b;
+  padding-left: 1rem;
+  margin: 0.75rem 0;
+  font-style: italic;
+  color: #64748b;
+}
+.rich-text-editor ul,
+.rich-text-editor ol {
+  margin: 0.5rem 0 0.75rem 1.5rem;
+}
+.rich-text-editor ul {
+  list-style: disc;
+}
+.rich-text-editor ol {
+  list-style: decimal;
+}
+.rich-text-editor li {
+  margin-bottom: 0.25rem;
+}
